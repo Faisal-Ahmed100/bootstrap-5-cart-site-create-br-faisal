@@ -62,3 +62,23 @@ tabs.onclick = e => {
     element.classList.add("active");
   }
 }
+
+// navbar js
+window.addEventListener('scroll',function(){
+  var nav=this.document.querySelector('.navbar');
+  nav.classList.toggle('navbar-main',window.scrollY > 0)
+})
+
+// scroll to top js
+
+window.addEventListener('scroll',function(){
+  var topbutton=this.document.querySelector('.top-toTop');
+  topbutton.classList.toggle('topButtonActive',window.scrollY > 0)
+})
+
+function scrollToTop(){
+  window.scrollTo({
+    top: 0,
+    behavior:'smooth'
+  })
+}

@@ -10,6 +10,57 @@ body {
   font-family: "Inter" !important;
   overflow-x: hidden !important;
 }
+.top-toTop {
+  position: fixed;
+  bottom: 800px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: #7963f0;
+  border-radius: 50px;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.top-toTop i {
+  font-size: 22px;
+  color: white;
+}
+
+.topButtonActive{
+  visibility: visible;
+  opacity: 1;
+  bottom: 20px;
+}
+
+/* navbar css started here */
+
+.navbar{
+  /* background-color: white; */
+  /* padding: 15px 0; */
+  padding-top: 15px;
+  padding-bottom: 40px;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  transition: 0.3s;
+}
+.navbar-main{
+  background-color: #8975fce5;
+  padding: 10px 0;
+  z-index: 100;
+}
+.navbar-main .sign-up{
+  color: rgb(190, 190, 190) !important;
+}
 .nav-link {
   font-family: "Inter";
   font-style: normal;
@@ -17,7 +68,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.1px;
-  color: #0d0a19 !important;
+  color: #fff !important;
   transition: all 0.2s ease-in-out;
   margin-left: 20px;
 }
@@ -36,8 +87,8 @@ body {
   align-items: center;
 }
 .sign-up img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   padding: 8px;
   border-radius: 10px;
   background-color: #f5f6f7;
